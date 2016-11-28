@@ -1,4 +1,4 @@
-package edu.utc.bluelight;
+package com.example.hunter.bluelight;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

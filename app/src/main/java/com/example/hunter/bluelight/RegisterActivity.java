@@ -1,4 +1,4 @@
-package edu.utc.bluelight;
+package com.example.hunter.bluelight;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -24,6 +24,11 @@ public class RegisterActivity extends AppCompatActivity {
             }
 
         });
+
+
+
+
+
 
 
 

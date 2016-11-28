@@ -1,4 +1,4 @@
-package edu.utc.bluelight;
+package com.example.hunter.bluelight;
 
 /**
  * Created by Hunter on 9/22/16.

@@ -1,4 +1,4 @@
-package edu.utc.bluelight;
+package com.example.hunter.bluelight;
 
 import org.junit.Test;
 
