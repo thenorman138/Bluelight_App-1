@@ -16,6 +16,7 @@ public class SplashScreen extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
 
+
         Thread timerThread = new Thread(){
             public void run(){
                 try{
