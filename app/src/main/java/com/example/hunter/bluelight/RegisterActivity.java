@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 public class RegisterActivity extends AppCompatActivity {
 
+    final EncryptionSuite encS = new EncryptionSuite();
     databaseHelper myDb;
     EditText editUTCID, editPASS, editFirst, editLast;
     Button btnAdd;
@@ -57,12 +58,13 @@ public class RegisterActivity extends AppCompatActivity {
                 new View.OnClickListener(){
                     @Override
                     public void onClick(View v){
+                        String hashPass = encS.hashPassword(editPASS.getText().toString());
                         boolean isInserted = myDb.insertData(editUTCID.getText().toString(),
-                                editPASS.getText().toString(),
+                                hashPass,
                                 editFirst.getText().toString(),
                                 editLast.getText().toString() );
                         if(isInserted=true)
-                            Toast.makeText(RegisterActivity.this, "User Registered", Toast.LENGTH_LONG).show();
+                            Toast.makeText(RegisterActivity.this, "User Registered, hashPass: "+hashPass, Toast.LENGTH_LONG).show();
                         else
                             Toast.makeText(RegisterActivity.this, "Error registering user", Toast.LENGTH_LONG).show();
 
