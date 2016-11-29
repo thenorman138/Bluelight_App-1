@@ -64,7 +64,7 @@ public class RegisterActivity extends AppCompatActivity {
                                 editFirst.getText().toString(),
                                 editLast.getText().toString() );
                         if(isInserted=true)
-                            Toast.makeText(RegisterActivity.this, "User Registered", Toast.LENGTH_LONG).show();
+                            Toast.makeText(RegisterActivity.this, "User Registered, hashPass: "+hashPass, Toast.LENGTH_LONG).show();
                         else
                             Toast.makeText(RegisterActivity.this, "Error registering user", Toast.LENGTH_LONG).show();
 

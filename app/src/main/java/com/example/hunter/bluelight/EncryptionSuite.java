@@ -15,7 +15,7 @@ import javax.crypto.Cipher;
 import static android.content.ContentValues.TAG;
 
 /**
- * Created by Tyler Adams on 11/28/2016.
+ * Created by Tyler on 11/28/2016.
  */
 
 public class EncryptionSuite {
