@@ -62,4 +62,41 @@
         android:layout_above="@+id/textView3"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/longitudeTextGPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rideSubmitBtn"
+        android:text="longitude"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/longitudeValueGPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rideSubmitBtn"
+        android:layout_toRightOf="@id/longitudeTextGPS"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="0.0000"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/latitudeTextGPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/longitudeTextGPS"
+        android:text="latitude"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/latitudeValueGPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/longitudeValueGPS"
+        android:layout_toRightOf="@id/longitudeTextGPS"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="0.0000"
+        android:textSize="20sp"/>
+
 </RelativeLayout>
