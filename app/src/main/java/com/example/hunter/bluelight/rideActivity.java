@@ -35,7 +35,7 @@ public class rideActivity extends AppCompatActivity {
         longitudeValueGPS = (TextView) findViewById(R.id.longitudeValueGPS);
 
         //Initializing LocationManager and starting to listen for coordinates
-        final LocationManager locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
+        locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
         locationManager.requestLocationUpdates(
                 LocationManager.GPS_PROVIDER, 2 *  60 * 1000, 10, locationListener);
 
